@@ -1,0 +1,21 @@
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+                     <!-- Address Emps per depend hai -->  
+                <bean id="a" class="pp.Address">
+               <property name="hno" value="101"></property>
+               <property name="street" value="Bistan Road"></property>
+               <property name="city" value="khargone"></property>
+               </bean>           
+               <bean id="e" class="pp.Emps">
+                <property name="id" value="1"></property>
+                <property name="name" value="ABhi"></property>
+                <property name="address" ref="a"></property>  
+                
+                
+               </bean>
+             
+</beans>

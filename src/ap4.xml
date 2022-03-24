@@ -1,0 +1,17 @@
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+    <bean id="c" class="pp.Car">
+    <property name="cno" value="1"></property>
+    <property name="cname" value="creta"></property>
+    <property name="details">
+    <map> 
+    <entry key="suv" value="hundai"></entry>
+    <entry key="4 wheeler" value="pawan"></entry>
+    </map>
+    </property>
+    </bean>
+</beans>
